@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameBusinessLogic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FirstPlayer>
+    <Username>Black</Username>
+    <IsMyTurn>false</IsMyTurn>
+    <PlayerColor>Black</PlayerColor>
+  </FirstPlayer>
+  <SecondPlayer>
+    <Username>White</Username>
+    <IsMyTurn>true</IsMyTurn>
+    <PlayerColor>White</PlayerColor>
+  </SecondPlayer>
+  <IsGameOver>false</IsGameOver>
+  <MultipleJumps>true</MultipleJumps>
+  <Board>
+    <ArrayOfCell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>0</X>
+          <Y>0</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>0</X>
+          <Y>1</Y>
+        </Position>
+        <CurrentPiece>
+          <PieceColor xmlns="PieceColor">White</PieceColor>
+          <Image>/Resources/whiteP.png</Image>
+          <King>false</King>
+        </CurrentPiece>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>0</X>
+          <Y>2</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>0</X>
+          <Y>3</Y>
+        </Position>
+        <CurrentPiece>
+          <PieceColor xmlns="PieceColor">White</PieceColor>
+          <Image>/Resources/whiteP.png</Image>
+          <King>false</King>
+        </CurrentPiece>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>0</X>
+          <Y>4</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>0</X>
+          <Y>5</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>0</X>
+          <Y>6</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>0</X>
+          <Y>7</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+    </ArrayOfCell>
+    <ArrayOfCell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>1</X>
+          <Y>0</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>1</X>
+          <Y>1</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>1</X>
+          <Y>2</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>1</X>
+          <Y>3</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>1</X>
+          <Y>4</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>1</X>
+          <Y>5</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>1</X>
+          <Y>6</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>1</X>
+          <Y>7</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+    </ArrayOfCell>
+    <ArrayOfCell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>2</X>
+          <Y>0</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>2</X>
+          <Y>1</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>2</X>
+          <Y>2</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>2</X>
+          <Y>3</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>2</X>
+          <Y>4</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>2</X>
+          <Y>5</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>2</X>
+          <Y>6</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>2</X>
+          <Y>7</Y>
+        </Position>
+        <CurrentPiece>
+          <PieceColor xmlns="PieceColor">White</PieceColor>
+          <Image>/Resources/whiteP.png</Image>
+          <King>false</King>
+        </CurrentPiece>
+        <IsSelected>false</IsSelected>
+      </Cell>
+    </ArrayOfCell>
+    <ArrayOfCell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>3</X>
+          <Y>0</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>3</X>
+          <Y>1</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>3</X>
+          <Y>2</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>3</X>
+          <Y>3</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>3</X>
+          <Y>4</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>3</X>
+          <Y>5</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>3</X>
+          <Y>6</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>3</X>
+          <Y>7</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+    </ArrayOfCell>
+    <ArrayOfCell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>4</X>
+          <Y>0</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>4</X>
+          <Y>1</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>4</X>
+          <Y>2</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>4</X>
+          <Y>3</Y>
+        </Position>
+        <CurrentPiece>
+          <PieceColor xmlns="PieceColor">White</PieceColor>
+          <Image>/Resources/whiteK.png</Image>
+          <King>true</King>
+        </CurrentPiece>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>4</X>
+          <Y>4</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>4</X>
+          <Y>5</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>4</X>
+          <Y>6</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>4</X>
+          <Y>7</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+    </ArrayOfCell>
+    <ArrayOfCell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>5</X>
+          <Y>0</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>5</X>
+          <Y>1</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>5</X>
+          <Y>2</Y>
+        </Position>
+        <CurrentPiece>
+          <PieceColor xmlns="PieceColor">Black</PieceColor>
+          <Image>/Resources/blackP.png</Image>
+          <King>false</King>
+        </CurrentPiece>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>5</X>
+          <Y>3</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>5</X>
+          <Y>4</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>5</X>
+          <Y>5</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>5</X>
+          <Y>6</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>5</X>
+          <Y>7</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+    </ArrayOfCell>
+    <ArrayOfCell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>6</X>
+          <Y>0</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>6</X>
+          <Y>1</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>6</X>
+          <Y>2</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>6</X>
+          <Y>3</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>6</X>
+          <Y>4</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>6</X>
+          <Y>5</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>6</X>
+          <Y>6</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>6</X>
+          <Y>7</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+    </ArrayOfCell>
+    <ArrayOfCell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>7</X>
+          <Y>0</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>7</X>
+          <Y>1</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>7</X>
+          <Y>2</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>7</X>
+          <Y>3</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>7</X>
+          <Y>4</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>7</X>
+          <Y>5</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">Black</CellColor>
+        <ColorName>#774936</ColorName>
+        <Position>
+          <X>7</X>
+          <Y>6</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+      <Cell>
+        <CellColor xmlns="CellColor">White</CellColor>
+        <ColorName>#F2F3AE</ColorName>
+        <Position>
+          <X>7</X>
+          <Y>7</Y>
+        </Position>
+        <IsSelected>false</IsSelected>
+      </Cell>
+    </ArrayOfCell>
+  </Board>
+  <PlayerToMove>White, it's your turn!</PlayerToMove>
+</GameBusinessLogic>

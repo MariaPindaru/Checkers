@@ -1,0 +1,52 @@
+﻿<Application x:Class="Checkers.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Checkers"
+             StartupUri="Views/GameWindow.xaml">
+    <Application.Resources>
+        <BitmapImage x:Key="background" UriSource="Resources/bg.png"/>
+
+        <Style x:Key = "myButtonStyle" TargetType = "{x:Type Button}">
+            <Setter Property = "Height" Value = "60"/>
+            <Setter Property = "Width" Value = "250"/>
+            <Setter Property = "Foreground" Value = "White"/>
+            <Setter Property = "FontSize" Value = "30"/>
+            <Setter Property = "Margin" Value = "15"/>
+            <Setter Property = "Cursor" Value = "Hand"/>
+            <Setter Property = "FontFamily" Value = "Malgun Gothic"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect ShadowDepth="20" Opacity="0.6"/>
+                </Setter.Value>
+            </Setter>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border" CornerRadius="15"  
+                                Background="#3c1518" 
+                                BorderThickness="3" 
+                                Padding="2">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" 
+                                        TargetName="Border" Value="#F2F3AE"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="Black"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Application.Resources>
+</Application>
